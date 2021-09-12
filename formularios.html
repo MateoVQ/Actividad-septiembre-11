@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--TODOS LOS CONTROLES DEL FORMULARIO DEBEN IR DENTRO DE LA ETIQUERA form-->
+    <h1>Formularios</h1>
+    <form action="Prueba.html" method="POST"> <!--method GET= Muestra los datos del formulario en la URL de la página (por temas de seguridad no es lo más recomendable)|| method POST= los datos no son visibles en la URL, no tiene limitaciones de tamaño-->
+        Usuario: <input type="text" name="usuario"> <!--Cuadro de texto con referencia=usuario-->
+        <br><br>
+        Contraseña: <input type="password" name="password"> <!--Cuadro de texto tipo contraseña-->
+        <br><br>
+        Género: <!--Para seleccionar un botón radio, 1 opción de 2 posibles agrupadas con el name=boton1-->
+        <input type="radio" name="boton1" value="1">Hombre
+        <input type="radio" name="boton1" value="2">Mujer
+        <br><br>
+        Vehículo: <!--Para seleccionar un checkbuttom-->
+        <input type="checkbox" name="carro" value="SI">Carro
+        <input type="checkbox" name="moto" value="" checked>Moto
+        <br><br>
+        <!--Botón para enviar formulario-->
+        <input type="submit">
+        <!--Botón para reiniciar el formulario-->
+        <input type="reset">
+    </form>
+</body>
+</html>
