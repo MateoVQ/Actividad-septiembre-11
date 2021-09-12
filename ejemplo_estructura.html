@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estructura del cuerpo de una página</title>
+    <!--ESTILOS EMBEDIDOS-->
+    <style>
+        li {color: crimson; text-align: center;} /* CADA VEZ QUE HAYA UNA ETIQUETA li SE MOSTRARÁ CON EL ESTILO DEFINIDO A CONTINUACIÓN */
+    </style>
+
+    <!--REFERENCIANDO CON EL ATRIBUTO ID-->
+    <link rel="stylesheet" href="css/misEstilos.css">
 </head>
 <body>
     <header> <!--ENCABEZADO DE LA PÁGINA-->
@@ -14,7 +21,7 @@
         <ul>
             <li>Principal</li>
             <li><a href="formularios.html">Formulario</a></li>
-            <li>Fotos</li>
+            <li class="texto2">Fotos</li> <!-- ESCRIBIENDO class="texto2" SE REFERENCIA EL ESTILO CREADO COMO CLASE EN EL ARCHIVO misEstilos.css -->
             <li>Videos</li>
             <li>Contacto</li>
         </ul>
@@ -23,7 +30,8 @@
         <tr>
             <td>
                 <section> <!--PARA DEFINIR LOS BLOQUES EN LOS QUE SE DIVIDIRÁ NUESTRA PARTE CENTRAL DE LA PÁGINA-->
-                    <h2>Información principal de nuestra página</h2>
+                    <h2 id="texto1">Información principal de nuestra página</h2> <!-- ESCRIBIENDO id="texto1" SE REFERENCIA EL ESTILO CREADO EN EL ARCHIVO misEstilos.css -->
+                    <p style="color: blue; text-align: center;">Estilo de linea</p>
                 </section>
             </td>
             <td>
